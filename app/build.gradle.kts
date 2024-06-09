@@ -72,5 +72,9 @@ dependencies {
     // Map
     implementation ("org.osmdroid:osmdroid-android:6.1.10")
 
+    implementation ("androidx.fragment:fragment-ktx:1.3.6")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
+
+
 
 }

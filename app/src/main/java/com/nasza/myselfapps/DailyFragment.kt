@@ -30,7 +30,7 @@ class DailyFragment : Fragment() {
         // Data Kegiatan saya
         val dailyActivities = listOf(
             DailyActivityModel(R.drawable.ic_olahraga, "Lari Pagi "),
-            DailyActivityModel(R.drawable.ic_makan, "Sarapah pagi"),
+            DailyActivityModel(R.drawable.ic_makan, "Sarapan pagi"),
             DailyActivityModel(R.drawable.ic_kuliah, "Berkuliah Mencari Ilmu"),
             DailyActivityModel(R.drawable.ic_nonton, "Menonton Tv / Anime"),
             DailyActivityModel(R.drawable.ic_jalan_jalan, "Jalan-Jalan Menggunakan Motor"),

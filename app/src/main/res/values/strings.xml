@@ -40,5 +40,14 @@
 
     <string name="youtube_api_key">YOUR_API_KEY</string>
     <string name="musik">Musik</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="musfav">Musik Favorit Saya</string>
+    <string name="vidfav">Video Favorit Saya</string>
+    <string name="santai">Santai Aja Guyss Hehe</string>
+    <string name="langsung">Gasskan Aja Gaksiii</string>
+    <string name="helo">Hallo Semua Selamat Datang di Aplikasi Saya</string>
+    <string name="hehe">Hehe Hanya Sekedar Memberitahu Kalau Aplikasi Ini Akan Membuatmu Tau Tentang Profile Diri Saya Bisa dibilang Semacam Protofolio Saya deh hehe.</string>
+    <string name="cape">Langsung Aja deh Masuk ke Halaman Utama Lest Go Guysssss</string>
 
 </resources>
