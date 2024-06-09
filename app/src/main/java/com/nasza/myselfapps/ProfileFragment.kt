@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import de.hdodenhof.circleimageview.BuildConfig
 import org.osmdroid.api.IMapController
 import org.osmdroid.config.Configuration
 import org.osmdroid.util.GeoPoint
@@ -30,36 +31,48 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Data dari fragment_profile
+        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
-        // Tombol WhatsApp
+        // Initialize MapView
+        Configuration.getInstance().userAgentValue = BuildConfig.APPLICATION_ID
+        mapView = view.findViewById(R.id.map)
+        mapView.setMultiTouchControls(true)
+
+        // Set initial map center and zoom level
+        val mapController: IMapController = mapView.controller
+        mapController.setZoom(15.0)
+        val startPoint = GeoPoint(-6.8758542, 107.6333703)
+        mapController.setCenter(startPoint)
+
+        // Add marker to map
+        val startMarker = Marker(mapView)
+        startMarker.position = startPoint
+        startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
+        startMarker.title = "Lokasi Saya"
+        mapView.overlays.add(startMarker)
+
+        // WhatsApp button
         val btnDialNumber: ImageButton = view.findViewById(R.id.btn_dial_number)
         btnDialNumber.setOnClickListener {
-            val uri = Uri.parse("https://wa.me/<0895343338617>")
+            val uri = Uri.parse("https://wa.me/+62895343338617")
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
-        // Tombol Email
+        // Email button
         val btnEmail: ImageButton = view.findViewById(R.id.btn_email)
         btnEmail.setOnClickListener {
-            val emailIntent = Intent(Intent.ACTION_SENDTO)
-            emailIntent.data = Uri.parse("mailto:nasza9909@gmail.com")
-            startActivity(emailIntent)
+            val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "nasza9909@gmail.com", null))
+            startActivity(Intent.createChooser(emailIntent, "Send email..."))
         }
 
-        // Tombol Instagram
-        val btnIg: ImageButton = view.findViewById(R.id.btn_ig)
-        btnIg.setOnClickListener {
-            val uri = Uri.parse("http://instagram.com/_u/naszaa03_")
+        // Instagram button
+        val btnIG: ImageButton = view.findViewById(R.id.btn_ig)
+        btnIG.setOnClickListener {
+            val uri = Uri.parse("https://www.instagram.com/naszaa03_")
             val intent = Intent(Intent.ACTION_VIEW, uri)
-            intent.setPackage("com.instagram.android")
-            try {
-                startActivity(intent)
-            } catch (e: Exception) {
-                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://instagram.com/naszaa03_")))
-            }
+            startActivity(intent)
         }
 
         // Google Maps button
@@ -70,25 +83,8 @@ class ProfileFragment : Fragment() {
             startActivity(intent)
         }
 
-        // Map setup
-        mapView = view.findViewById(R.id.map)
-        mapView.setMultiTouchControls(true)
-        Configuration.getInstance().userAgentValue = requireActivity().packageName
-
-        val mapController: IMapController = mapView.controller
-        mapController.setZoom(15.0)
-        val startPoint = GeoPoint(-6.8758542, 107.6333703)
-        mapController.setCenter(startPoint)
-
-        val startMarker = Marker(mapView)
-        startMarker.position = startPoint
-        startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
-        startMarker.title = "Lokasi Ku"
-        mapView.overlays.add(startMarker)
-
         return view
     }
-
 
     override fun onResume() {
         super.onResume()

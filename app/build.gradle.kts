@@ -70,7 +70,7 @@ dependencies {
     implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1")
 
     // Map
-    implementation ("org.osmdroid:osmdroid-android:6.1.1")
+    implementation ("org.osmdroid:osmdroid-android:6.1.10")
 
 
 }

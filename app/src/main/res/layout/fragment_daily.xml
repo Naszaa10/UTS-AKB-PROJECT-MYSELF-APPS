@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/judul"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/bg_gal">
+        android:background="@drawable/bg_home">
 
         <ScrollView
             android:layout_width="match_parent"
