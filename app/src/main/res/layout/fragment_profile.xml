@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~     Tanggal Pengerjaan : 25/05/2024 - 09/6/2024
+  ~     Nim : 10121073
+  ~     Nama : Nasza Dwi Prayoga
+  ~     email : nasza9909@gmail.com
+  ~     Copyright © 2024 Nasza Dwi Prayoga. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/cream">
+    <RelativeLayout
+        android:id="@id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:background="@drawable/bg_profile"
+        android:layout_marginBottom="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="left"
+                    tools:ignore="RtlHardcoded" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageList"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gal3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="left"
+                    tools:ignore="RtlHardcoded" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="0"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:text="@string/nim1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:text="@string/nim"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:textSize="16sp"
+                            android:layout_weight="0"
+                            android:textColor="@color/black"
+                            android:text="@string/nama1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:text="@string/nama"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:textSize="16sp"
+                            android:layout_weight="0"
+                            android:textColor="@color/black"
+                            android:text="@string/kelas1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:text="@string/kelas"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:textSize="16sp"
+                            android:layout_weight="0"
+                            android:textColor="@color/black"
+                            android:text="@string/alamat1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:text="@string/alamat"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:textSize="16sp"
+                            android:layout_weight="0"
+                            android:textColor="@color/black"
+                            android:text="@string/agama1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:text="@string/agama"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:textSize="16sp"
+                            android:layout_weight="0"
+                            android:textColor="@color/black"
+                            android:text="@string/jenis_kelamin1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:text="@string/jenis_kelamin"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kontak"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="left"
+                    tools:ignore="RtlHardcoded" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btn_dial_number"
+                        android:src="@drawable/whatsapp"
+                        android:background="#00000000"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:contentDescription="TODO" />
+
+                    <ImageButton
+                        android:id="@+id/btn_email"
+                        android:src="@drawable/mail"
+                        android:background="#00000000"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:contentDescription="TODO" />
+
+                    <ImageButton
+                        android:id="@+id/btn_ig"
+                        android:src="@drawable/ig"
+                        android:background="#00000000"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:contentDescription="TODO" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lok"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="left"
+                    tools:ignore="RtlHardcoded" />
+
+                <org.osmdroid.views.MapView
+                    android:id="@+id/map"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+                <Button
+                    android:id="@+id/btn_open_maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buka Google Maps"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/cream"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="left"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/buttonSucces"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/cream"
+                    android:text="Ini aplikasi pertama saya"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">My Self Apps</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="nama1">Nama</string>
+    <string name="nim1">NIM </string>
+    <string name="kelas1">Kelas</string>
+    <string name="alamat1">Alamat</string>
+    <string name="agama1">Agama</string>
+    <string name="jenis_kelamin1">Jenis Kelamin</string>
+    <string name="nama">Nasza Dwi Prayoga</string>
+    <string name="nim">10121073</string>
+    <string name="kelas">IF-2 / PEM-ANDRO3</string>
+    <string name="alamat">Jl. Cisitu Indah VI Bandung</string>
+    <string name="agama">Islam</string>
+    <string name="jenis_kelamin">Laki-laki</string>
+    <string name="description">Deskripsi: Mahasiswa Teknik Informatika, tertarik dengan pengembangan aplikasi mobile dan IoT.</string>
+    <string name="interest2">Interest 2</string>
+    <string name="hobi">Hobi </string>
+    <string name="futsal"> Futsal, Badminton</string>
+    <string name="makanan_kesukaan">Makanan Kesukaan</string>
+    <string name="makan">Mie Ayam, Bakso</string>
+    <string name="minuman_kesukaan">Minuman Kesukaan</string>
+    <string name="minum">Es Kelapa, Susu, Air Putih</string>
+    <string name="mobile_apps">Mobile Apps</string>
+    <string name="cita_cita">Cita-cita</string>
+    <string name="dev">Pengusaha atau Developer</string>
+
+    <string name="daily">Daily</string>
+    <string name="kegiatan_daily">Daily Activity</string>
+    <string name="listteman">Teman-Teman</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="poto">Photo</string>
+    <string name="kontak">Kontak Saya</string>
+    <string name="lok">Lokasi Saya</string>
+    <string name="about">Tentang</string>
+    <string name="ok">Okee</string>
+    <string name="apk">Aplikasi Kuu</string>
+
+    <string name="youtube_api_key">YOUR_API_KEY</string>
+    <string name="musik">Musik</string>
+
+</resources>

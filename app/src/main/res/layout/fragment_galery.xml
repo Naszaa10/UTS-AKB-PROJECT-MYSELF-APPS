@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~     Tanggal Pengerjaan : 25/05/2024 - 09/6/2024
+  ~     Nim : 10121073
+  ~     Nama : Nasza Dwi Prayoga
+  ~     email : nasza9909@gmail.com
+  ~     Copyright © 2024 Nasza Dwi Prayoga. All rights reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:background="@drawable/bg_daily"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="left"
+                android:text="@string/poto"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                tools:ignore="RtlHardcoded" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:clipToPadding="false"
+                android:padding="4dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

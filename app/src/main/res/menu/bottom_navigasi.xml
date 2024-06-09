@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~     Tanggal Pengerjaan : 25/05/2024 - 09/6/2024
+  ~     Nim : 10121073
+  ~     Nama : Nasza Dwi Prayoga
+  ~     email : nasza9909@gmail.com
+  ~     Copyright © 2024 Nasza Dwi Prayoga. All rights reserved.
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home"/>
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/pengguna"/>
+    <item android:title="Daily"
+        android:id="@+id/daily"
+        android:icon="@drawable/routine"/>
+    <item android:title="Galery"
+        android:id="@+id/galery"
+        android:icon="@drawable/image_galery"/>
+    <item android:title="Music"
+        android:id="@+id/music"
+        android:icon="@drawable/music"/>
+</menu>

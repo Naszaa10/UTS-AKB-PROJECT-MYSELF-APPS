@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors.xml -->
+<resources>
+    <color name="black">#000000</color>
+    <color name="lightgreen">#90EE90</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkgreen">#006400</color>
+    <color name="cream">#F0D7B3</color>
+    <color name="colorPrimary">#4682B4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>
