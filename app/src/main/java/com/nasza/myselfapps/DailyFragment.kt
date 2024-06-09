@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 //~     Nim : 10121073
 //~     Nama : Nasza Dwi Prayoga
 //~     email : nasza9909@gmail.com
+//~     kelas : PEM-ANDRO 3
 //~     Copyright © 2024 Nasza Dwi Prayoga. All rights reserved.
 //-->
 class DailyFragment : Fragment() {

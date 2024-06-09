@@ -12,9 +12,10 @@ import androidx.recyclerview.widget.RecyclerView
 //~     Nim : 10121073
 //~     Nama : Nasza Dwi Prayoga
 //~     email : nasza9909@gmail.com
+//~     kelas : PEM-ANDRO 3
 //~     Copyright © 2024 Nasza Dwi Prayoga. All rights reserved.
 //-->
-// DailyActivityAdapter.kt
+
 class DailyActivityAdapter(private val activities: List<DailyActivityModel>) : RecyclerView.Adapter<DailyActivityAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

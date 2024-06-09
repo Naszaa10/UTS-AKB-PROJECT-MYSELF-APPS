@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide
 //~     Nim : 10121073
 //~     Nama : Nasza Dwi Prayoga
 //~     email : nasza9909@gmail.com
+//~     kelas : PEM-ANDRO 3
 //~     Copyright © 2024 Nasza Dwi Prayoga. All rights reserved.
 //-->
 class VideoAdapter(private val videoList: List<Video>) :
